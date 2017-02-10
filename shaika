@@ -1,1 +1,33 @@
 
+Programming Assignment 2: Lexical Scoping
+
+# For the Coursera course [R Programming](https://www.coursera.org/course/rprog)
+
+a <- makeCacheMatrix (matrix(c(1,2,12,13), nrow = 2, ncol = 2))
+Summary(a)
+
+
+# setMatrix 1
+# getMatrix 1 
+# cacheInverse 1
+# getInverse 1 
+
+a$getMatrix()
+> [,1] [,2]
+> [1,] 1 12
+> [2,] 2 13
+
+cacheSolve(a)
+> [,1] [,2]
+> [1,] -1.1818182 1.09090909
+> [2,] 0.1818182 -0.09090909
+
+a <- makeCacheMatrix()
+summary(a)
+
+# create a square matrix (reason `solve` only handles square matrices )
+a$setMatrix( matrix(c(1,2,12,13), nrow = 2, ncol = 2) )
+a$getMatrix()
+> [,1] [,2]
+> [1,] 1 12
+> [2,] 2 13
